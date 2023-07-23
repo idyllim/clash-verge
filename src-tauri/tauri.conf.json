@@ -50,7 +50,7 @@
         },
          "webviewInstallMode": {
            "type": "fixedRuntime",
-           "path": "./Microsoft.WebView2Runtime.114/"
+           "path": "./Microsoft.WebView2Runtime/"
         }
       }
     },
