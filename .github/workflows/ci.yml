@@ -1,11 +1,9 @@
 name: Release CI
 
 on:
-  workflow_dispatch:
   push:
-    tags:
-      - v**
-
+    branches:
+      - master  
 env:
   CARGO_INCREMENTAL: 0
   RUST_BACKTRACE: short
