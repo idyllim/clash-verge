@@ -20,7 +20,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
+      
+      - name: Download Webview2 Runtime
+        uses: gamedev-thingy/Download-Extract@done
+        with:
+          url: "https://cdn.rurun.net/share/tmp/Microsoft.WebView2Runtime.zip"
+          destination: "./src-tauri"
+          ZIPname: "Microsoft.WebView2Runtime"
+          
       - name: Install Rust
         uses: actions-rs/toolchain@v1
         with:
@@ -61,12 +68,6 @@ jobs:
         run: |
           yarn install --network-timeout 1000000
           yarn run check
-      - name: Download Webview2 Runtime
-        uses: gamedev-thingy/Download-Extract@done
-        with:
-          url: "https://cdn.rurun.net/share/tmp/Microsoft.WebView2Runtime.zip"
-          destination: "./src-tauri"
-          ZIPname: "Microsoft.WebView2Runtime"
       - name: Tauri build
         uses: tauri-apps/tauri-action@v0
         # enable cache even though failed
