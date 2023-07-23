@@ -27,7 +27,7 @@
       ],
       "resources": ["resources"],
       "externalBin": ["sidecar/clash", "sidecar/clash-meta"],
-      "copyright": "© 2022 zzzgydi All Rights Reserved",
+      "copyright": "© 2023 All Rights Reserved",
       "category": "DeveloperTool",
       "shortDescription": "A Clash GUI based on tauri.",
       "longDescription": "A Clash GUI based on tauri.",
