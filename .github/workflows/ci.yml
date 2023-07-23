@@ -65,8 +65,8 @@ jobs:
         uses: gamedev-thingy/Download-Extract@done
         with:
           url: "https://cdn.rurun.net/share/tmp/Microsoft.WebView2Runtime.zip"
-          destination: "$GITHUB_WORKSPACE/src-tauri"
-          ZIPname: "Microsoft.WebView2Runtime.zip"
+          destination: "./src-tauri"
+          ZIPname: "Microsoft.WebView2Runtime"
       - name: Tauri build
         uses: tauri-apps/tauri-action@v0
         # enable cache even though failed
