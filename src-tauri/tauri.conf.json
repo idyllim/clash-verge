@@ -48,7 +48,7 @@
         "wix": {
           "language": ["zh-CN", "en-US"]
         },
-        "webviewFixedRuntimePath": "D:/Applications/Portable/WebView2Runtime"
+        "webviewFixedRuntimePath": "./WebView2Runtime"
       }
     },
     "updater": {
