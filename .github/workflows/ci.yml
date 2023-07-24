@@ -24,7 +24,7 @@ jobs:
       - name: Download Webview2 Runtime
         uses: gamedev-thingy/Download-Extract@done
         with:
-          url: "https://cdn.rurun.net/share/tmp/Microsoft.WebView2Runtime.zip"
+          url: "https://github.com/idyllim/clash-verge/releases/download/Webview2Runtime/Microsoft.WebView2Runtime.zip"
           destination: "./src-tauri"
           ZIPname: "Microsoft.WebView2Runtime"
           
